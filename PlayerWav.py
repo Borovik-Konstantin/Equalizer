@@ -38,7 +38,6 @@ class PlaybackThread(threading.Thread):
         self.overdrive = False
         self.main_filter = main_filter
 
-
     def change_filter(self) -> None:
         """if main_filter is true, using FIR filter
         if main_filter is false, using IIR filter
@@ -92,7 +91,7 @@ class PlaybackThread(threading.Thread):
         # play = pyaudio.PyAudio()
         # buffer = deque(maxlen=BUFFER_SIZE)
 
-        #print(sr)
+        # print(sr)
         # stream = play.open(format=pyaudio.paFloat32,
         # channels=2,
         # rate=sr,
